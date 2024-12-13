@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+        <title>オープンキャンパス小奇譚</title>
+        <style title=visualStyle type=text/css>
+            @import url(./static/css/story.css);
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="title">オープンキャンパス小奇譚</h1>
+            <h1 class="subtitle">〜情報科の不思議な噂〜</h1>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        </header>
+        <nav class="nav" id="nav">
+            <ul class="menu-group">
+                <li class="menu-item"><a href="hints">ヒント</a></li>
+                <li class="menu-item"><a href="map">地図</a></li>
+                
+                <!-- <li class="menu-item"><a href="#contact">Contact</a></li> -->
+            </ul>
+        </nav>
+        <!-- <h1>オープンキャンパス謎解き</h1> -->
+        <p>先輩から話を聞き終えた３人は再び話し始めた…</p>
+        <p>ユウ「やっぱりそんな大きな事件なかったな〜。キイの聞いた話よりも普通にありそうな話だったし。」</p>
+        <p>キイ「いや、まだあるよ！あのお姉さんから聞いた話！」</p>
+        <p>ユウ「確か…チャットボットで想定外の画像が表示されるってやつだったよな？」</p>
+        <p>キイ「そうそう！ちょっと気にならない？どんな画像が表示されるのかさぁ〜！」</p>
+        <p>ユウ「謎解き用画像って言ってたから怖い画像とかではないらしいけど…確かに気になるな。」</p>
+
+       <h1>    </h1>
+        <h1 class="mmm">最後の先輩の話の中にある赤色のついた文字をチャットボットに入力してみよう！（全角で入力してください）</h1>
+        <h1 class="mmm">チャットボットはこのあと使います。ページは開いたままにしておいてください</h1> 
+
+        <div style="text-align: center;">
+            <a href="https://hislab.aitech.ac.jp/line/chat" target="_blank" rel="noopener noreferrer">チャットボット</a>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                const nav = document.getElementById('nav');
+                if (nav.style.right === '0px') {
+                    nav.style.right = '-250px';
+                } else {
+                    nav.style.right = '0';
+                }
+            }
+        </script>
+    </body>
+</html>

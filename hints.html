@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>謎解き(仮)</title>
+    <!-- ここにstylesheetを追加 -->
+    <style title=visualStyle type=text/css>
+        @import url(./static/css/hints.css);
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">タイトル</h1>
+        <nav class="nav">
+            <ul class="menu-group">
+                <!-- <li class="menu-item"><a href="hints">ヒント</a></li> -->
+                <!-- <li class="menu-item"><a href="#">項目2</a></li>
+                <li class="menu-item"><a href="#">項目3</a></li>
+                <li class="menu-item"><a href="#">項目4</a></li>
+                <li class="menu-item"><a href="#">項目5</a></li> -->
+            </ul>
+        </nav>
+        <a href="javascript:history.back()" class="back-button">戻る</a>
+    </header>
+    <h1>オープンキャンパス謎解きヒントページ</h1>
+
+    <input type="button" value="謎１のヒント~1~" class="button" onclick="toggleDisplay('div1')">
+    <div id="div1">イラストを漢字に変換してみよう。四角1つで１文字を表しているようだ。</div>
+
+    <input type="button" value="謎１のヒント~2~" class="button" onclick="toggleDisplay('div2')">
+    <div id="div2">漢字は音読みしてみよう。動物の名前になるはずだ</div>
+
+    <input type="button" value="謎2のヒント~1~" class="button" onclick="toggleDisplay('div3')">
+    <div id="div3">イラストが8等分されている。分けられた部分1つにつき１文字当てはまるようだ</div>
+
+    <input type="button" value="謎3のヒント~1~" class="button" onclick="toggleDisplay('div4')">
+    <div id="div4">イラストが表しているものの名前を右側の枠に当てはめてみよう</div>
+
+    <input type="button" value="謎4のヒント~1~" class="button" onclick="toggleDisplay('div5')">
+    <div id="div5">数字は時間を表しているようだ。別の表し方を考えてみよう</div>
+
+    <input type="button" value="謎4のヒント~2~" class="button" onclick="toggleDisplay('div6')">
+    <div id="div6">アナログ時計で考えてみよう。カタカナが浮かんでくるはずだ</div>
+
+    <input type="button" value="謎5のヒント~1~" class="button" onclick="toggleDisplay('div7')">
+    <div id="div7">色々な科目の教科書は「かもく」を表しているようだ</div>
+
+    <input type="button" value="謎5のヒント~2~" class="button" onclick="toggleDisplay('div8')">
+    <div id="div8">赤い四角の前には「月」がくるようだ</div>
+
+    <input type="button" value="謎6のヒント~1~" class="button" onclick="toggleDisplay('div9')">
+    <div id="div9">成長することによって変化するもの、材料と生成品であるものもあるようだ。</div>
+     
+    <input type="button" value="謎6のヒント~2~" class="button" onclick="toggleDisplay('div10')">
+    <div id="div10">繋げた線が通った部分の文字を読もう。全部で10文字の文になるはずだ。</div>
+
+    <!-- 前のページに戻るリンク -->
+    <a href="javascript:history.back()" class="back-link">前のページに戻る</a>
+
+    <script language="Javascript">
+        function toggleDisplay(id) {
+            var element = document.getElementById(id);
+            var currentDisplay = window.getComputedStyle(element).display;
+
+            if (currentDisplay === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

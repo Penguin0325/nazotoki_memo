@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+        <title>オープンキャンパス小奇譚</title>
+        <style title=visualStyle type=text/css>
+            @import url(./static/css/story.css);
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="title">オープンキャンパス小奇譚</h1>
+            <h1 class="subtitle">〜情報科の不思議な噂〜</h1>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        </header>
+        <nav class="nav" id="nav">
+            <ul class="menu-group">
+                <li class="menu-item"><a href="hints">ヒント</a></li>
+                <li class="menu-item"><a href="map">地図</a></li>
+                <li class="menu-item"><a href="nazo1">謎ページに戻る</a></li>
+                <!-- <li class="menu-item"><a href="#contact">Contact</a></li> -->
+            </ul>
+        </nav>
+        <!-- <h1>オープンキャンパス謎解き</h1> -->
+        <p>学生(女)「オープンキャンパスの準備中での事件？あるある！新鮮なやつが！</p>
+        <p>オープンキャンパス用の<span style="color:red;">チャットボット</span>を作っていたのだけど、今日突然変なエラーが出るようになったの。返答とは全く関係ない画像が稀に表示されるものなんだ。原因がわからなくて修正が間に合わなかったから今使えるようになってるものでも表示されちゃうんだよね。</p>
+        <p>ん？どんな画像かって？最初は組み込む予定だった謎解きゲーム用の画像だよ。制作時間が足りなさそうだったから諦めたんだ。</p>
+        <p>そうだ！これ、例のチャットボットの告知のチラシ！このURLから飛んでもらえればチャットボットが使えるよ！変な画像が出てくる意外は普通のチャットボットだから使ってみてほしいな！もしエラーに遭遇しても見なかったことにしておいて…！」</p>
+        <!-- h1タグにする -->
+        <div style="text-align: center;">
+            <a href="middlestory" class="page-button">次へ</a>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                const nav = document.getElementById('nav');
+                if (nav.style.right === '0px') {
+                    nav.style.right = '-250px';
+                } else {
+                    nav.style.right = '0';
+                }
+            }
+        </script>
+    </body>
+</html>

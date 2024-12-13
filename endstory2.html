@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+    <title>オープンキャンパス小奇譚</title>
+    <style title=visualStyle type=text/css>
+        @import url(./static/css/story.css);
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">オープンキャンパス小奇譚</h1>
+        <h1 class="subtitle">〜情報科の不思議な噂〜</h1>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    </header>
+    <nav class="nav" id="nav">
+        <ul class="menu-group">
+            <li class="menu-item"><a href="hints">ヒント</a></li>
+            <li class="menu-item"><a href="map">地図</a></li>
+            <!-- <li class="menu-item"><a href="#contact">Contact</a></li> -->
+        </ul>
+    </nav>
+    <!-- <h1>オープンキャンパス謎解き</h1> -->
+    <p>ユウ「な、なんだったんだ…あの人」</p>
+    <p>キイ「嵐のようだったねぇ」</p>
+    <p>ユウ「うーん、謎とか言ってたから製作者だったのかもな？」</p>
+    <p>キイ「かもねぇ…にしてもパソコンに閉じ込められたって何？」</p>
+    <p>ユウ「そういう設定の謎解きだったんじゃないか？パソコンに閉じ込められるなんてあるわけないだろ…」</p>
+    <p>キイ「そうかなぁ…」</p>
+    <p>学生（女）「あっ！さっき話聞きにきてくれた3人組！」</p>
+    <p>キイ「あっ！チャットボットのお話してくれたお姉さんだ〜！」</p>
+    <p>学生（女）「覚えていてくれてありがとう〜！あのさ、さっきここら辺に眼鏡の女の子来なかった？一方的に話しては去ってくタイプだから目立つんだけど…」</p>
+    <p>キイ「あっ！その人にさっき話しかけられましたよ！謎解いてくれてありがとう〜！とか話したいこと話してどっか行っちゃいました」</p>
+    <p>学生(女)「あ〜！入れ違いか〜！あの子チャットボットの制作メンバーの一人なんだけど、パソコン研究室に置きっぱなしにして丸一日ぐらい音信不通になってたの。ちょうどさっき校内で見かけたって情報聞いて探し回ってるところでさ…」</p>
+    <p>ユウ「え！？音信不通！？」</p>
+    <p>学生(女)「そうそう。本当に音信不通。今も連絡つかないしマジで勘弁してくれ〜多分例の謎入れたのもあの子だし…捕まえたら問い詰めてやる！教えてくれてありがとう！それじゃ！」</p>
+    <p>学生は走り去っていった。</p>
+
+    <div style="text-align: center;">
+        <a href="endstory3" class="page-button">エンディング３へ</a>
+    </div>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            if (nav.style.right === '0px') {
+                nav.style.right = '-250px';
+            } else {
+                nav.style.right = '0';
+            }
+        }
+    </script>
+</body>
+</html>

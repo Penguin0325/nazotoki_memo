@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オープンキャンパス小奇譚</title>
+    <style title=visualStyle type=text/css>
+        @import url(./static/css/story.css);
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">オープンキャンパス小奇譚</h1>
+        <h1 class="subtitle">〜情報科の不思議な噂〜</h1>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    </header>
+    <nav class="nav" id="nav">
+        <ul class="menu-group">
+            <li class="menu-item"><a href="hints">ヒント</a></li>
+            <li class="menu-item"><a href="map">地図</a></li>
+            <!-- <li class="menu-item"><a href="#contact">Contact</a></li> -->
+        </ul>
+    </nav>
+    <p>ユウ「な、なんかこれやばくないか？」</p>
+    <p>キイ「閉じ込められてる……？誘拐？それとも神隠しとか？」</p>
+    <p>ユウ「なんでそんなに冷静に推理してるんだよ！！！」</p>
+    <p>キイ「どこかから出られなくなったけど、唯一このチャットボットには干渉できると…あるよねぇ都市伝説で、神隠しされてるけどネットには繋がってるからそこに助け求めるやつ〜」</p>
+    <p>ユウ「こ、怖いこと言うな！……そういえば元々謎解きやる予定だったって言ってたからそれの名残とかかも…！きっとそうだ！そうに違いない！」</p>
+    <p>キイ「自信ありげな割には顔色が悪ねぇ」</p>
+    <p>ユウ「き、気のせい！」</p>
+    <p>キイ「ビビりなユウは置いておいて、『ここに…がある』ってのも気になるねぇ。行ったらわかるのかなぁ。場所は…一緒に送られてきた画像のところかなぁ」</p>
+    <p>ユウ「ほ、ほら！謎解きっぽい！」</p>
+    <p>キイ「でもわからないよ〜万が一閉じ込めてるやつに場所が知られないように、謎にして送ってるって可能性もあるかもねぇ」</p>
+    <p>ユウ「これ以上怖い想像するな！！！」</p>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            if (nav.style.right === '0px') {
+                nav.style.right = '-250px';
+            } else {
+                nav.style.right = '0';
+            }
+        }
+    </script>
+</body>
+</html>

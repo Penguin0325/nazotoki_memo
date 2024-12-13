@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オープンキャンパス小奇譚</title>
+    <style title=visualStyle type=text/css>
+        @import url(./static/css/story.css);
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1 class="title">オープンキャンパス小奇譚</h1>
+        <h1 class="subtitle">〜情報科の不思議な噂〜</h1>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    </header>
+    <nav class="nav" id="nav">
+        <ul class="menu-group">
+            <li class="menu-item"><a href="hints">ヒント</a></li>
+            <li class="menu-item"><a href="map">地図</a></li>
+            <li class="menu-item"><a href="nazo1">謎ページに戻る</a></li>
+            <!-- <li class="menu-item"><a href="#contact">Contact</a></li> -->
+        </ul>
+    </nav>
+    
+    <p>学生（男）「オープンキャンパスの準備中での事件、ですか。事件ってほどじゃないですけど研究室に荷物が閉じ込められて危うく帰れなくなりそうにはなった友人ならいますよ。</p>
+    <p>研究室の扉は学生証が鍵になっているんです。学生証や財布もろもろを研究室に置きっぱなしにしてお手洗いに行ったらその間に鍵が閉められてしまったようで…。散々注意されていたのに…。</p>
+    <p>『電車の定期も置いてきたから帰れない〜〜！！！助けて！！！』っていろんな人に連絡していたみたいで…。自分にも連絡が来たのですが、すでに自宅にいたので「頑張れ」とだけ言っておきました。</p>
+    <p>まあ、たまたま同じ研究室の方がまだ学校にいたのでその日は家に帰れたそうです。彼みたいにならないように、みなさんは自分のものをちゃんと管理してくださいね。」</p>
+    <div style="text-align: center;">
+        <a href="nazo3" class="page-button">次の謎へ</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            if (nav.style.right === '0px') {
+                nav.style.right = '-250px';
+            } else {
+                nav.style.right = '0';
+            }
+        }
+    </script>
+</body>
+</html>

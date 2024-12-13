@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+    <title>オープンキャンパス小奇譚</title>
+    <style title=visualStyle type=text/css>
+        @import url(./static/css/story.css);
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">オープンキャンパス小奇譚</h1>
+        <h1 class="subtitle">〜情報科の不思議な噂〜</h1>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    </header>
+    <nav class="nav" id="nav">
+        <ul class="menu-group">
+            <li class="menu-item"><a href="hints">ヒント</a></li>
+            <li class="menu-item"><a href="map">地図</a></li>
+            <li class="menu-item"><a href="nazo1">謎を見る</a></li>
+            <!-- <li class="menu-item"><a href="#contact">Contact</a></li> -->
+        </ul>
+    </nav>
+    <!-- <h1>オープンキャンパス謎解き</h1> -->
+    <p>オープンキャンパスに来たユウ、キイ、あなたの３人。</p>
+    <p>今は各々で見たい場所を見たら、1号館に集合ということになっている。</p>
+    <p>個人的に見たい場所を見終えたあなたは集合場所に向かった。</p>
+    <p>ユウ「あ！やっと来た！！！なあ助けてくれよー！キイのテンションがおかしい！！！」</p>
+    <p>キイ「ねぇねぇ聞いてよ！見に行った展示を担当してた人から聞いたんだけどさぁ、このオープンキャンパスの準備中に奇妙な出来事が起こったんだって！大学にも怪談話あるんだねぇ！こ〜んな気になる話だっていうのにユウの反応鈍くてさぁ…キミなら聞いてくれるよね！」 </p>
+    <p>キイは前のめりに話してくる。</p>
+    <p>ユウ「あんま相手にしなくていいぞ〜。聞いた感じじゃ噂に尾鰭がついて大きくなっちゃっただけな気がする。」</p>
+    <p>キイ「む〜ロマンがないなぁ、ロマンが。事実を確認するまでは真偽はわからないって〜。と言うことで、調べに行こう！真実を！」</p>
+    <p>ユウ「は？」</p>
+    <p>キイ「聞きにいくの！実際に不思議なことが起こったのかを！」</p>
+    <p>ユウ「は！？そんなの突然聞きにくる学生ヤバすぎて話してくれないって！」</p>
+    <p>キイ「それはそう〜なので！『オープンキャンパスの準備って大変だったんですかぁ？実際の大学生活についてもっと知りたくて！』って聞くの！そうしたら大学に興味のある熱心な高校生って感じになるし！う〜ん！あまりにも名案！！！」</p>
+    <p>ユウ「ああ…もうだめだこりゃ……こうなったらキイは止まらないし…付き合うしかないか…」</p>
+    <p>キイ「とは言ってもね！教えてくれた人は実際の研究室の名前とかは出しづらいっぽくてヒント？をくれたんだ〜。でももらったヒントがややこしくて私だけじゃどうしようもなさそうなんだよねぇ。二人もさ！考えてよ！！！」</p>
+    <p>キイの提案で教えてもらった謎を解くのだった。</p>
+   
+    <div style="text-align: center;">
+        <a href="nazo1" class="page-button">謎を解きに行く</a>
+    </div>
+    <h1>   </h1>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            if (nav.style.right === '0px') {
+                nav.style.right = '-250px';
+            } else {
+                nav.style.right = '0';
+            }
+        }
+    </script>
+</body>
+</html>
